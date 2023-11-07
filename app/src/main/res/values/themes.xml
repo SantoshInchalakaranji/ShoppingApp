@@ -1,8 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.ShoppingApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ShoppingApp" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/orange</item>
+
+        <!-- Made it transparent so we can make status bar also follow the gradient color from toolbar , programmatically -->
+
+        <item name="android:statusBarColor">@color/transparent</item>
+
+        <!-- To set status bar text color to black -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Toolbar  titleText appearance -->
+    <style name="ToolBarTitle">
+        <item name="android:fontFamily">@font/segeo_bold</item>
+        <item name="android:textColor">@color/black_gradient_1</item>
+        <item name="android:textSize">18sp</item>
+
     </style>
 
     <style name="Theme.ShoppingApp" parent="Base.Theme.ShoppingApp" />
