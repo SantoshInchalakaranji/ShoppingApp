@@ -6,6 +6,7 @@ plugins {
 
 }
 
+
 android {
     namespace = "com.prplmnstr.shoppingapp"
     compileSdk = 34
@@ -48,7 +49,7 @@ dependencies {
     val room_version = ("2.6.0")
 
 
-    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -73,6 +74,14 @@ dependencies {
 
     //Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    //lottie
+    implementation ("com.airbnb.android:lottie:4.1.0")
+
+    //picasso
+   implementation ("com.squareup.picasso:picasso:2.71828")
+
+
 
 }
 

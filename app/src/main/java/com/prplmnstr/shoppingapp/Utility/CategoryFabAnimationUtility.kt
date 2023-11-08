@@ -47,6 +47,9 @@ class CategoryFabAnimationUtility(private val binding: FragmentHomeBinding,
         fadeOutBlurEffect()
         hideBlurViewAndHiddenLayout()
         applyTransformForCollapse()
+
+
+
     }
 
     /**
@@ -106,7 +109,7 @@ class CategoryFabAnimationUtility(private val binding: FragmentHomeBinding,
         transform.endView = binding.hiddenLayout
         transform.duration = 800
         transform.scrimColor = context.getColor(R.color.transparent)
-        transform.setAllContainerColors(context.getColor(android.R.color.black))
+        transform.setAllContainerColors(context.getColor(android.R.color.transparent))
         TransitionManager.beginDelayedTransition(view as ViewGroup, transform)
     }
 

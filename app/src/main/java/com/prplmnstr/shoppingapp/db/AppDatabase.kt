@@ -37,6 +37,7 @@ abstract class AppDatabase : RoomDatabase() {
                         AppDatabase::class.java,
                         Constants.DATABASE_NAME
                     ).build()
+
                     INSTANCE = instance
                 }
                 return instance

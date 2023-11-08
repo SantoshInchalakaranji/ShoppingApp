@@ -29,4 +29,7 @@ interface ProductItemDao {
 
     @Query("SELECT * FROM ${Constants.PRODUCT_TABLE} WHERE categoryId = :categoryId")
     fun getAllProductsByCategory(categoryId: Int): LiveData<List<ProductItem>>
+
+    @Query("SELECT * FROM ${Constants.PRODUCT_TABLE}")
+    fun getAllProducts(): LiveData<List<ProductItem>>
 }

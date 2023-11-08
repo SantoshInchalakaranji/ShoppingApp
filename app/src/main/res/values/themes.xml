@@ -20,5 +20,9 @@
 
     </style>
 
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_background</item>
+    </style>
+
     <style name="Theme.ShoppingApp" parent="Base.Theme.ShoppingApp" />
 </resources>

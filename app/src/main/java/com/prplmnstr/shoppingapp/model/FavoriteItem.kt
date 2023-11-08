@@ -13,4 +13,19 @@ data class FavoriteItem(
     val price: Double,
     var isFavorite:Boolean = false,
     var quantityInCart: Int = 0
-)
+){
+    companion object {
+        fun fromProductItem(productItem: ProductItem): FavoriteItem {
+            return FavoriteItem(
+                productItem.id,
+                productItem.categoryId,
+                productItem.name,
+                productItem.icon,
+                productItem.price,
+                productItem.isFavorite,
+                productItem.quantityInCart
+            )
+        }
+    }
+
+}
