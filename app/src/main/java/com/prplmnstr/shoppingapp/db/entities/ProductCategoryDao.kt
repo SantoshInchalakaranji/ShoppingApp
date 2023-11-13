@@ -9,7 +9,6 @@ import androidx.room.Query
 import androidx.room.Update
 import com.prplmnstr.shoppingapp.Utility.Constants
 import com.prplmnstr.shoppingapp.model.ProductCategory
-import com.prplmnstr.shoppingapp.model.ProductItem
 
 @Dao
 interface ProductCategoryDao {

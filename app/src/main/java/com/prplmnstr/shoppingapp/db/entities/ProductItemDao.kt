@@ -2,14 +2,12 @@ package com.prplmnstr.shoppingapp.db.entities
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
-import androidx.room.Database
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import com.prplmnstr.shoppingapp.Utility.Constants
-import com.prplmnstr.shoppingapp.model.ProductCategory
 import com.prplmnstr.shoppingapp.model.ProductItem
 
 @Dao

@@ -3,8 +3,7 @@ package com.prplmnstr.shoppingapp.viewmodel
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.prplmnstr.shoppingapp.db.repository.ShoppingRepository
-import java.lang.IllegalArgumentException
+import com.prplmnstr.shoppingapp.repository.ShoppingRepository
 
 
 class ShoppingViewModelFactory(

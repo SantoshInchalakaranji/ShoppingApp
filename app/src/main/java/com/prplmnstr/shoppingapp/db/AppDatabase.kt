@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.prplmnstr.shoppingapp.Utility.Constants
-import com.prplmnstr.shoppingapp.Utility.TypeConverter
+
 import com.prplmnstr.shoppingapp.db.entities.CartDao
 import com.prplmnstr.shoppingapp.db.entities.FavoriteDao
 import com.prplmnstr.shoppingapp.db.entities.ProductCategoryDao
@@ -16,8 +16,10 @@ import com.prplmnstr.shoppingapp.model.FavoriteItem
 import com.prplmnstr.shoppingapp.model.ProductCategory
 import com.prplmnstr.shoppingapp.model.ProductItem
 
-@Database(entities = [ProductCategory::class, ProductItem::class, CartItem::class, FavoriteItem::class], version = 1)
-@TypeConverters(TypeConverter::class)
+@Database(
+    entities = [ProductCategory::class, ProductItem::class, CartItem::class, FavoriteItem::class],
+    version = 1
+)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract val productCategoryDao: ProductCategoryDao

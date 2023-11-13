@@ -1,7 +1,9 @@
 package com.prplmnstr.shoppingapp.Utility
 
+import java.text.DecimalFormat
+
 class Constants {
-    companion object{
+    companion object {
 
         const val DATABASE_NAME = "shopping_database"
         const val CATEGORY_TABLE = "category"
@@ -9,5 +11,7 @@ class Constants {
         const val CART_TABLE = "cart"
         const val PRODUCT_TABLE = "product"
         const val JSON_FILE = "shopping.json"
+
+        val df = DecimalFormat("#.##") // Format to two decimal places
     }
 }

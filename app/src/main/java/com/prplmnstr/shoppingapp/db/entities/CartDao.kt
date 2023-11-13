@@ -26,8 +26,8 @@ interface CartDao {
     @Delete
     suspend fun deleteCartItem(cartItem: CartItem): Int
 
-    @Query("DELETE FROM ${Constants.CART_TABLE} WHERE id IN (:itemIds)")
-    suspend fun deleteCartItems(itemIds: List<Int>): Int
+    @Delete
+    suspend fun deleteCartItems(cartItems: List<CartItem>): Int
 
     @Query("SELECT * FROM ${Constants.CART_TABLE}")
     fun getAllProducts(): LiveData<List<CartItem>>

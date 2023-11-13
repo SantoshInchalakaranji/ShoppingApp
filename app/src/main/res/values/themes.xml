@@ -8,8 +8,29 @@
 
         <item name="android:statusBarColor">@color/transparent</item>
 
+        <item name="android:windowTranslucentStatus">true</item>
+
         <!-- To set status bar text color to black -->
         <item name="android:windowLightStatusBar">true</item>
+
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="actionModeStyle">@style/action_mode_style</item>
+
+
+    </style>
+
+
+    <style name="action_mode_style" parent="@style/Widget.Material3.ActionMode">
+        <item name="background">@color/orange</item>
+        <item name="titleTextStyle">@style/ActionModeTitleTextStyle</item>
+
+    </style>
+
+    <style name="ActionModeTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Title">
+
+
+        <item name="fontFamily">@font/segeo_semi_bold</item>
     </style>
 
     <!-- Toolbar  titleText appearance -->
@@ -24,5 +45,14 @@
         <item name="android:background">@drawable/spinner_background</item>
     </style>
 
+    <style name="loader_animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+
     <style name="Theme.ShoppingApp" parent="Base.Theme.ShoppingApp" />
+
+
 </resources>

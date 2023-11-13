@@ -8,7 +8,6 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import com.prplmnstr.shoppingapp.Utility.Constants
-import com.prplmnstr.shoppingapp.model.CartItem
 import com.prplmnstr.shoppingapp.model.FavoriteItem
 import com.prplmnstr.shoppingapp.model.ProductItem
 
@@ -27,8 +26,8 @@ interface FavoriteDao {
     @Delete
     suspend fun deleteFavoriteItem(favoriteItem: FavoriteItem): Int
 
-    @Query("DELETE FROM ${Constants.FAVORITE_TABLE} WHERE id IN (:itemIds)")
-    suspend fun deleteFavoriteItems(itemIds: List<Int>): Int
+    @Delete
+    suspend fun deleteFavoriteItems(favoriteItems: List<FavoriteItem>): Int
 
     @Query("SELECT * FROM ${Constants.FAVORITE_TABLE}")
     fun getAllProducts(): LiveData<List<FavoriteItem>>

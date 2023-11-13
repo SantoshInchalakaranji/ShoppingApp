@@ -2,9 +2,7 @@ package com.prplmnstr.shoppingapp.Utility
 
 import android.content.Context
 import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import com.prplmnstr.shoppingapp.Utility.json.Category
-import com.prplmnstr.shoppingapp.Utility.json.Item
 import com.prplmnstr.shoppingapp.Utility.json.SourceDataFromJson
 import com.prplmnstr.shoppingapp.db.AppDatabase
 import com.prplmnstr.shoppingapp.model.ProductCategory
@@ -13,7 +11,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.IOException
-import java.io.InputStream
 
 class DatabaseInitializer(private val appDatabase: AppDatabase) {
 
@@ -27,7 +24,7 @@ class DatabaseInitializer(private val appDatabase: AppDatabase) {
             // If database doesn't exist, create and populate it
             val jsonString = readJsonFromAssets(context)
 
-            jsonString?.let {
+            jsonString.let {
 
                 // Parse JSON data into a data class
                 val sourceDataFromJson = parseJsonToDataClass(jsonString)
