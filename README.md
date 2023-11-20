@@ -16,7 +16,13 @@ This Android application is a shopping app that provides users with categorized 
 
 5. **UI/UX Enhancements**: Gradient-themed toolbar, appropriate use of Android UI components, and animations for visual appeal.
 
+## Screenshots
+
+<img src="https://github.com/SantoshInchalakaranji/ShoppingApp/blob/master/Screenshots/Web%201920%20%E2%80%93%201.png" />
+
 ## Project Structure
+
+<img src="https://github.com/SantoshInchalakaranji/ShoppingApp/blob/master/Screenshots/mvvm.png" /> 
 
 ```
 app
@@ -80,6 +86,7 @@ app
 
 - Navigate through categories, mark favorites, and manage your shopping cart.
 - Enjoy a visually appealing and user-friendly shopping experience.
+- Try the app by downloading the apk from - https://github.com/SantoshInchalakaranji/ShoppingApp/blob/master/apk/Shopping%20App.apk ⬇️
 
 ## Possible Upgrades
 
